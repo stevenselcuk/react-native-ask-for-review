@@ -1,8 +1,8 @@
 
 {
   "name": "react-native-ask-for-review",
-  "version": "1.0.2",
-  "description": "",
+  "version": "1.0.5",
+  "description": "Ask for review with following Apple's Human Interface Guidelines",
   "main": "index.js",
   "keywords": [
     "react-native",

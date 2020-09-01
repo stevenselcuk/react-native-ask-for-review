@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A6F7BFB24FEA913002A2F08 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6F7BFA24FEA913002A2F08 /* StoreKit.framework */; };
 		0AB4521E24FE64D70086B974 /* RNAskForReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB4521D24FE64D70086B974 /* RNAskForReview.swift */; };
 		B3E7B58A1CC2AC0600A0062D /* RNAskForReview.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNAskForReview.m */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0A6F7BFA24FEA913002A2F08 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.16.sdk/System/iOSSupport/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
 		0AB4521C24FE64D60086B974 /* RNAskForReview-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RNAskForReview-Bridging-Header.h"; sourceTree = "<group>"; };
 		0AB4521D24FE64D70086B974 /* RNAskForReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNAskForReview.swift; sourceTree = "<group>"; };
 		134814201AA4EA6300B7C361 /* libRNAskForReview.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNAskForReview.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,12 +38,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A6F7BFB24FEA913002A2F08 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A6F7BF924FEA913002A2F08 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A6F7BFA24FEA913002A2F08 /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		134814211AA4EA7D00B7C361 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +69,7 @@
 				B3E7B5891CC2AC0600A0062D /* RNAskForReview.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
 				0AB4521C24FE64D60086B974 /* RNAskForReview-Bridging-Header.h */,
+				0A6F7BF924FEA913002A2F08 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +83,7 @@
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
 				58B511D91A9E6C8500147676 /* CopyFiles */,
+				0A6F7BFD24FEA931002A2F08 /* Copy Generated Swift.h */,
 			);
 			buildRules = (
 			);
@@ -113,6 +126,28 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A6F7BFD24FEA931002A2F08 /* Copy Generated Swift.h */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Generated Swift.h";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "target_dir=${BUILT_PRODUCTS_DIR}/include/${PRODUCT_MODULE_NAME}/\n\n# Ensure the target include path exists\nmkdir -p ${target_dir}\n\n# Copy any file that looks like a Swift generated header to the include path\ncp ${DERIVED_SOURCES_DIR}/*-Swift.h ${target_dir}\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		58B511D71A9E6C8500147676 /* Sources */ = {

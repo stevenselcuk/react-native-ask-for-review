@@ -14,9 +14,9 @@ const safeCall = (func, minVersion = 12) => {
   return func;
 };
 
-const askForReview = safeCall(() => {
+const review = safeCall(() => {
   AskForReview.incrementAppOpenedCount();
   AskForReview.checkAndAskForReview();
 });
 
-export default askForReview;
+export default review;
