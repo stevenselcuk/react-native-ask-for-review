@@ -17,7 +17,7 @@ For more information:
 </div>
 
 
-## Getting started
+## 📦 How to install
 
 `npm install react-native-ask-for-review --save`
 
@@ -27,7 +27,15 @@ or
 
 then
 
-`cd ios && pod install` and run your project 🔥 This step probably works. If not please proceed👇🏻
+`cd ios && pod install` and run your project 🔥 This step probably works. If not please proceed 👇🏻
+
+## 🧠 How to use
+```javascript
+import AskForReview from 'react-native-ask-for-review';
+
+// Call it in your App.js
+AskForReview();
+```
 
 #### React Native <= 0.60
 Manually link the package.
@@ -53,14 +61,6 @@ Run `pod install` in the `ios/` directory
 #### Android
 
 No android for now. Sorry. 👉🌼
-
-## 🧠 Usage
-```javascript
-import AskForReview from 'react-native-ask-for-review';
-
-// Call it in your App.js
-AskForReview();
-```
 
  ### 🗺 Road Map
 
