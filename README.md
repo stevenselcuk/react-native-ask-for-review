@@ -1,7 +1,7 @@
 
 # react-native-ask-for-review
 
-## ⭐️⭐️⭐️⭐️⭐️ Ask for review nicely
+##  Ask for ⭐️⭐️⭐️⭐️⭐️ nicely
 
 This React Native package basicly triggers system-provided rating prompt with following Apple's practices.
 
