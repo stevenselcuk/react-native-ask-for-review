@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
                    DESC
   s.homepage     = "https://github.com/stevenselcuk"
   s.license      = "MIT"
-  s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+ # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
   s.author             = { "author" => "steven@tabbythecat.com" }
   s.platform     = :ios, "7.0"
   s.source       = { :git => "https://github.com/stevenselcuk/react-native-ask-for-review.git", :tag => "master" }
