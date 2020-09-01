@@ -25,6 +25,10 @@ or
 
 `yarn add react-native-ask-for-review`
 
+then
+
+`cd ios && pod install` and run your project 🔥
+
 ### Mostly automatic installation
 
 `react-native link react-native-ask-for-review`
