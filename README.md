@@ -25,6 +25,10 @@ or
 
 `yarn add react-native-ask-for-review`
 
+than 
+
+`cd ios && pod install`
+
 ### Mostly automatic installation
 
 `react-native link react-native-ask-for-review`
