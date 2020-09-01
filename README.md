@@ -3,7 +3,7 @@
 
 ##  Ask for ⭐️⭐️⭐️⭐️⭐️ nicely!
 
-This React Native package basically triggers a system-provided rating prompt with following Apple's practices.
+This React Native package basically triggers a system-provided rating & review prompt with following Apple's practices.
 
 For more information:
 
