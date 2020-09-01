@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "RNAskForReview"
-  s.version      = "1.0.0"
+  s.version      = "1.0.2"
   s.summary      = "Ask for review with following Apple's Human Interface Guidelines"
   s.description  = <<-DESC
                   RNAskForReview
