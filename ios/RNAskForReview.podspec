@@ -2,16 +2,16 @@
 Pod::Spec.new do |s|
   s.name         = "RNAskForReview"
   s.version      = "1.0.0"
-  s.summary      = "RNAskForReview"
+  s.summary      = "Ask for review with following Apple's Human Interface Guidelines"
   s.description  = <<-DESC
                   RNAskForReview
                    DESC
-  s.homepage     = ""
+  s.homepage     = "https://github.com/stevenselcuk"
   s.license      = "MIT"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
-  s.author             = { "author" => "author@domain.cn" }
+  s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  s.author             = { "author" => "steven@tabbythecat.com" }
   s.platform     = :ios, "7.0"
-  s.source       = { :git => "https://github.com/author/RNAskForReview.git", :tag => "master" }
+  s.source       = { :git => "https://github.com/stevenselcuk/react-native-ask-for-review.git", :tag => "master" }
   s.source_files  = "RNAskForReview/**/*.{h,m}"
   s.requires_arc = true
 
