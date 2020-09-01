@@ -1,7 +1,7 @@
 
 # react-native-ask-for-review
 
-##  Ask for ⭐️⭐️⭐️⭐️⭐️ nicely
+##  Ask for ⭐️⭐️⭐️⭐️⭐️ nicely!
 
 This React Native package basicly triggers system-provided rating prompt with following Apple's practices.
 
@@ -27,24 +27,32 @@ or
 
 then
 
-`cd ios && pod install` and run your project 🔥
+`cd ios && pod install` and run your project 🔥 This step probably works. If not please proceed👇🏻
 
-### Mostly automatic installation
+#### React Native <= 0.60
+Manually link the package.
 
-`react-native link react-native-ask-for-review`
+`react-native link react-native-siri-shortcut`
 
-### Manual installation
+Run `pod install` in the `ios/` directory
 
+#### Manual installation for iOS
 
-#### iOS
+If you can't use use_frameworks! use this step.
 
-1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2. Go to `node_modules` ➜ `react-native-ask-for-review` and add `RNAskForReview.xcodeproj`
-3. In XCode, in the project navigator, select your project. Add `libRNAskForReview.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
-4. Run your project (`Cmd+R`)<
+Install the package and create a Bridging Header file
 
-  	```
+Add a new file to Xcode (File > New > File), then select “Source” and click “Swift File“.
 
+Name it anything you want. Select "Yes" when asked if you want to create a Bridging Header File.
+
+Delete everything in the new Swift file.
+
+Run `pod install` in the `ios/` directory
+
+#### Android
+
+No android for now. Sorry. 👉🌼
 
 ## 🧠 Usage
 ```javascript
