@@ -1,6 +1,11 @@
 
 # react-native-ask-for-review
 
+<div align="center">
+	<img src="https://imgur.com/f7a4eEX.png" />
+</div>
+
+
 ## Getting started
 
 `$ npm install react-native-ask-for-review --save`
@@ -34,20 +39,12 @@
       compile project(':react-native-ask-for-review')
   	```
 
-#### Windows
-[Read it! :D](https://github.com/ReactWindows/react-native)
-
-1. In Visual Studio add the `RNAskForReview.sln` in `node_modules/react-native-ask-for-review/windows/RNAskForReview.sln` folder to their solution, reference from their app.
-2. Open up your `MainPage.cs` app
-  - Add `using Ask.For.Review.RNAskForReview;` to the usings at the top of the file
-  - Add `new RNAskForReviewPackage()` to the `List<IReactPackage>` returned by the `Packages` method
-
 
 ## Usage
 ```javascript
-import RNAskForReview from 'react-native-ask-for-review';
+import AskForReview from 'react-native-ask-for-review';
 
-// TODO: What to do with the module?
-RNAskForReview;
+// Call it in your App.js
+AskForReview();
 ```
   
