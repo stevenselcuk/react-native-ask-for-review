@@ -40,7 +40,7 @@ AskForReview();
 #### React Native <= 0.60
 Manually link the package.
 
-`react-native link react-native-siri-shortcut`
+`react-native link react-native-ask-for-review`
 
 Run `pod install` in the `ios/` directory
 
